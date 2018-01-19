@@ -2,18 +2,24 @@ require 'pry'
 
 def fizzbuzz
   f_b =
-      (1..100).map do |i|
-          case
-            when 
-              i % 15 == 0 then "FizzBuzz"
-            when 
-              i % 3 == 0 then "Fizz"
-            when 
-              i % 5 == 0 then "Buzz"
-            else i
-          end
+    (1..100).map do |i|
+      case
+        when 
+          i % 15 == 0 then "FizzBuzz"
+        when 
+          i % 3 == 0 then "Fizz"
+        when 
+          i % 5 == 0 then "Buzz"
+        else i
       end
-  puts fizz_buzz
+    end
+  puts f_b
+end
+
+def mult(n, mn)
+  puts "Placeholder - Left off here"
+  puts n
+  puts mn
 end
 
 def h(i)
@@ -48,9 +54,17 @@ def h(i)
     when 3
       puts "3"
       fizzbuzz
-      
+
     when 4
       puts "\n\n4"
+      puts "Number"
+      print "> "
+      n = gets.strip.to_i
+      puts "Max Num"
+      print "> "
+      mn = gets.strip.to_i
+
+      mult(n, mn)
 
     when 5
       puts "5"
